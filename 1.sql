@@ -30,6 +30,6 @@ CREATE TABLE Enrollments (
     course_id INTEGER NOT NULL,
     enrollment_date DATE NOT NULL,
     grade VARCHAR(2),
-    FOREIGN KEY (student_id) REFERENCES Students(student_id),
-    FOREIGN KEY (course_id) REFERENCES Courses(course_id)
+    FOREIGN KEY (student_id) REFERENCES public."Students"(student_id),
+    FOREIGN KEY (course_id) REFERENCES public."Courses"(course_id)
 );
